@@ -1,7 +1,31 @@
+!!! 5
 %html
 	%head
+		%meta{:name => "viewport", 
+			:content => "width=device-width, initial-scale=1"}
+		%title Mobile Bootcamp App
+		%link{:rel => "stylesheet", 
+			:href => "http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"}
+		%script{:type => "text/javascript",
+				:src  => "http://code.jquery.com/jquery-1.6.4.min.js"}
+		%script{:type => "text/javascript",
+				:src  => "http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"}
 		%script{:type => "text/javascript",
 		        :src  => "application.js"}
-		%title Josh's Mobile Bootcamp App
-		
 	%body
+		%div{"data-role" => "page", :id => "home"}
+			%div{"data-role" => "header"}
+				%h1 Hello World
+
+			%div{"data-role" => "content"}
+				%a{:href => "#page2", "data-role" => "button"} Page 2
+				
+		%div{"data-role" => "page", :id => "page2"}
+			%div{"data-role" => "header"}
+				%a{:href => "#home", "data-icon" => "home", 
+					"data-iconpos" => "notext", "data-direction" => "reverse"}
+				%h1 Page 2
+			%div{"data-role" => "content"}
+				%ul{:id => "run-times", "data-role" => "listview"}
+				%a{:href => "#home", "data-role" => "button",
+					"data-icon" => "arrow-l", "data-direction" => "reverse"} Back
