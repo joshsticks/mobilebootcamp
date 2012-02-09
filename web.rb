@@ -7,6 +7,6 @@ get '/' do
   haml :index
 end
 
-get '/public/javascripts/application.js' do
+get '/application.js' do
   coffee :application
 end
