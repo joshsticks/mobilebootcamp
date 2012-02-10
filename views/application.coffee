@@ -13,4 +13,4 @@ $ ->
 		else
 			runTimes = [new Date()]
 		localStorage["runTimes"] = JSON.stringify runTimes
-		$("#run-times").append "<li>" + Date(run) + "</li>" for run in runTimes
+		$("#run-times").append "<li>" + new Date(run) + "</li>" for run in runTimes

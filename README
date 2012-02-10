@@ -1,0 +1,6 @@
+Makes sure you have ruby, gem, bundler beforehand.
+Clone locally.
+CD into the directory.
+Run 'bundle install'.
+Run 'foreman start'.
+Hit the site locally at localhost:5000.
