@@ -22,11 +22,8 @@
 				
 		%div{"data-role" => "page", :id => "page2"}
 			%div{"data-role" => "header"}
-				%a{:href => "#home", "data-icon" => "home", 
-					"data-iconpos" => "notext", "data-direction" => "reverse"}
+				%a{:href => "#home", "data-role" => "button", 
+					"data-icon" => "arrow-l", "data-direction" => "reverse"} Back
 				%h1 Page 2
 			%div{"data-role" => "content"}
 				%ul{:id => "run-times", "data-role" => "listview", "data-inset" => "true"}
-				%div
-					%a{:href => "#home", "data-role" => "button", 
-						"data-icon" => "arrow-l", "data-direction" => "reverse"} Back
